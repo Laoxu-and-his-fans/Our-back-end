@@ -41,7 +41,7 @@ set FLASK_APP=flaskr
 set FLASK_ENV=developer
 flask run
 ```
-## Take a brief look of our projec
+## Take a brief look of our project
 Login 
 ![avatar](https://ftp.bmp.ovh/imgs/2021/07/000b10db5294471d.png)
 Register
