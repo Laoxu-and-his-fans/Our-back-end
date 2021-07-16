@@ -7,7 +7,7 @@ This is the ynu web-final-homework of group 7.(back-end)
 - [History](#history)
 - [Install](#install)
 - [Usage](#usage)
-- [Take a brief look of our project](#Take a brief look of our project)
+- [Profile](#profile)
 - [Contributing](#contributing)
 - [License](#license)
 - [Credits](#credits)
@@ -15,7 +15,8 @@ This is the ynu web-final-homework of group 7.(back-end)
 
 ## Background
 
-This project is the finalhomework of YNU web class(back-end). We used the bootstrap to beautify the UI of the flaskr(a demo project of flask)
+This project is the finalhomework of YNU web class(back-end). We used the bootstrap to beautify the UI of the flaskr(a demo project of flask).
+With the help of the bootstrap, you can visit our website with your mobile phone.
 
 ## Language
 ### HTML
@@ -41,7 +42,7 @@ set FLASK_APP=flaskr
 set FLASK_ENV=developer
 flask run
 ```
-## Take a brief look of our project
+## Profile
 Login 
 ![avatar](https://ftp.bmp.ovh/imgs/2021/07/000b10db5294471d.png)
 Register
