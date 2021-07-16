@@ -32,6 +32,8 @@ This module depends upon a knowledge of [Markdown]().
 
 pip install flask
 ```
+pip install flask
+```
 
 ### Any optional sections
 
