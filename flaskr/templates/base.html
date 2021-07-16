@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our web</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='apple-touch-icon.png') }}">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+<title>{% block title %}{% endblock %} - Flaskr</title>
+<body style="background-image:url(https://ftp.bmp.ovh/imgs/2021/07/251507d0a6414e22.jpg);background-size:cover">
+<nav>
+    <h1 class="text-center">Flaskr</h1>
+    <ul>
+        {% if g.user %}
+        <div><h1 align="left">{{ g.user['username'] }}</h1></div>
+        <div><a class="btn btn-primary btn-lg" href="{{ url_for('auth.logout') }}">Log Out</a></div>
+        {% else %}
+        <div class="in"><a class="btn btn-primary btn-lg" href="{{ url_for('auth.register') }}">Register</a></div>
+        <div class="in float-left"><a class="btn btn-primary btn-lg" href="{{ url_for('auth.login') }}">Log In</a></div>
+        {% endif %}
+    </ul>
+</nav>
+<section class="content">
+    <header>
+        {% block header %}{% endblock %}
+    </header>
+    {% for message in get_flashed_messages() %}
+    <div>{{ message }}</div>
+    {% endfor %}
+    {% block content %}{% endblock %}
+</section>
+</html>
+<style>
+    .in{
+    display: inline;
+    }
+
+
+
+
+</style>
