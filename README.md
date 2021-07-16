@@ -19,10 +19,10 @@ This is the ynu web-final-homework of group 7.(back-end)
 
 ## Background
 
-### Any optional sections
+This project is the finalhomework of YNU web class(back-end). We used the bootstrap to beautify the UI of the flaskr(a demo project of flask)
 
 ## Language
-
+HTML5 Python javascript
 ## History
 
 ## Install
