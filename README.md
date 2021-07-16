@@ -30,27 +30,22 @@ Our-back-end v1.0 2021-7-15
 ## Install
 This module depends upon a knowledge of [Markdown]().
 
-pip install flask
+We used the framwork flask, you can install the package by the following pip instruction
 ```
 pip install flask
 ```
-
-### Any optional sections
-
+Except the flask, we also used the bootstrap to beautify the UI of the flaskr
+```
+pip install flask-bootstrap
+```
 ## Usage
-
+You can run the code with the following instructions if you are using the windows OS
 ```
+set FLASK_APP=flaskr
+set FLASK_ENV=developer
+flask run
 ```
-
-Note: The `license` badge image link at the top of this file should be updated with the correct `:user` and `:repo`.
-
-### Any optional sections
-
-## API
-
-### Any optional sections
-
-## More optional sections
+## Take a brief look of our project
 
 ## Contributing
 
